@@ -13,6 +13,7 @@
 	<modules>
 		<module>../build</module>
 		<module>../cohort-engine</module>
+		<module>../cohort-engine-flink</module>
 		<module>../cohort-cli</module>
 		<module>../cohort-engine-api</module>
 		<module>../cohort-engine-api-web</module>
