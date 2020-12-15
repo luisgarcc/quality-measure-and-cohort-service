@@ -26,6 +26,13 @@
 	<dependencies>
 
 		<dependency>
+			<groupId>com.ibm.cohort</groupId>
+			<artifactId>cohort-engine</artifactId>
+			<version>${revision}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-streaming-java_2.12</artifactId>
 			<version>${flink.version}</version>
@@ -90,7 +97,7 @@
 							<minimizeJar>true</minimizeJar>
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>FirstExample</mainClass>
+									<mainClass>com.ibm.cohort.engine.CqlEngineFlinkExample</mainClass>
 								</transformer>
 							</transformers>
 							<!-- filter out META-INF files to avoid issues with signed jar files -->

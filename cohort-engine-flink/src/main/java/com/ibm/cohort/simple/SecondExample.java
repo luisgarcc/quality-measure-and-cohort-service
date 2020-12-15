@@ -1,3 +1,5 @@
+package com.ibm.cohort.simple;
+
 import java.util.Properties;
 
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
