@@ -1,18 +1,17 @@
 package com.ibm.cohort.engine;
 
-import ca.uhn.fhir.context.FhirContext;
-import com.ibm.cohort.engine.translation.CqlTranslationProvider;
-import com.ibm.cohort.engine.translation.InJVMCqlTranslationProvider;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.opencds.cqf.cql.engine.execution.LibraryLoader;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.ibm.cohort.engine.translation.CqlTranslationProvider;
+import com.ibm.cohort.engine.translation.InJVMCqlTranslationProvider;
+
+import ca.uhn.fhir.context.FhirContext;
 
 public class CqlEngineFlinkExample {
 
