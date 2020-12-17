@@ -41,7 +41,8 @@ public class CqlEngineFlinkExample {
 
 		stream.print();
 
-		env.execute("cohort-engine-test");
+		String jobName = params.get("jobName", "cohort-engine-test");
+		env.execute(jobName);
 	}
 
 	// TODO: This caching logic helps limit the number of times we translate CQL to ELM
