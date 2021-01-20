@@ -28,11 +28,9 @@ import org.hl7.fhir.r4.model.RelatedArtifact.RelatedArtifactType;
  */
 public class FhirLibraryLibrarySourceProvider extends MultiFormatLibrarySourceProvider {
 
-	private IGenericClient fhirClient;
 	private RestFhirLibraryResolutionProvider libraryResolutionProvider;
 
 	public FhirLibraryLibrarySourceProvider(IGenericClient fhirClient) {
-		this.fhirClient = fhirClient;
 		this.libraryResolutionProvider = new RestFhirLibraryResolutionProvider(fhirClient);
 	}
 
